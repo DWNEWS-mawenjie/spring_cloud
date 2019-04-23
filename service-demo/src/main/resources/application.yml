@@ -1,0 +1,19 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: spring-cloud-producer
+  data:
+    mongodb:
+      uri: mongodb://127.0.0.1
+      port: 27017
+      database: demo
+
+eureka:
+  instance:
+    hostname: 127.0.0.1
+  client:
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:8761/eureka
+
