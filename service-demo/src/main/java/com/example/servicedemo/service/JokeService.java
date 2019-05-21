@@ -1,6 +1,7 @@
 package com.example.servicedemo.service;
 
 import com.example.servicedemo.entity.Joke;
+import java.util.Optional;
 import org.springframework.data.domain.Page;
 
 /**
@@ -13,4 +14,6 @@ public interface JokeService {
     Joke save(Joke joke);
 
     Page<Joke> getJokeList(Integer page, Integer pageSize);
+
+    Optional<Joke> findJoke(String id);
 }
