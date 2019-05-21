@@ -13,9 +13,13 @@ import org.springframework.data.mongodb.core.mapping.Document;
 public class User implements Serializable {
   @Id
   String id;
-  String userName;
-  String picture;
-
+  String nickName;
+  String avatarUrl;
+  Integer gender;
+  String country;
+  String province;
+  String city;
+  String language;
 
 
   public String getId() {
@@ -26,19 +30,59 @@ public class User implements Serializable {
     this.id = id;
   }
 
-  public String getUserName() {
-    return userName;
+  public String getNickName() {
+    return nickName;
   }
 
-  public void setUserName(String userName) {
-    this.userName = userName;
+  public void setNickName(String nickName) {
+    this.nickName = nickName;
   }
 
-  public String getPicture() {
-    return picture;
+  public String getAvatarUrl() {
+    return avatarUrl;
   }
 
-  public void setPicture(String picture) {
-    this.picture = picture;
+  public void setAvatarUrl(String avatarUrl) {
+    this.avatarUrl = avatarUrl;
+  }
+
+  public Integer getGender() {
+    return gender;
+  }
+
+  public void setGender(Integer gender) {
+    this.gender = gender;
+  }
+
+  public String getCountry() {
+    return country;
+  }
+
+  public void setCountry(String country) {
+    this.country = country;
+  }
+
+  public String getProvince() {
+    return province;
+  }
+
+  public void setProvince(String province) {
+    this.province = province;
+  }
+
+  public String getCity() {
+    return city;
+  }
+
+  public void setCity(String city) {
+    this.city = city;
+  }
+
+  public String getLanguage() {
+    return language;
+  }
+
+  public void setLanguage(String language) {
+    this.language = language;
   }
 }
